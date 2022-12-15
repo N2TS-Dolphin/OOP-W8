@@ -18,7 +18,7 @@ public:
 public:
 	string rename(string data)
 	{
-		int position = data.find("773423.pdf");
+		int position = data.find("7");
 
 		string temp = data.replace(position, 10, _Replace);
 

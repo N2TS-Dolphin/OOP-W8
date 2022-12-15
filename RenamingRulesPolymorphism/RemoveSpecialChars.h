@@ -7,14 +7,11 @@
 class RemoveSpecialChars : public IRule
 {
 private:
-	vector <string> _SpecialChars;
+	vector <string> _SpecialChars = { ".", ",", "/", "`", "~", "-", "_", "=", "+" };
 	string _Replace = " ";
 
 public:
-	RemoveSpecialChars(vector <string> SpecialChars)
-	{
-		_SpecialChars = SpecialChars;
-	}
+	RemoveSpecialChars() {}
 
 public:
 	string rename(string data)
@@ -43,6 +40,7 @@ public:
 					break;
 				}
 			}
+
 			if (check == true)
 				builder << data[i];
 		}

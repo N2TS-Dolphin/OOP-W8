@@ -37,14 +37,10 @@ public:
 		Object* result = NULL;
 
 		vector <string> temp = Utils::String::split(data, "=");
-		vector <string> tokens;
-
-		for (int i = 0; i < temp[1].length(); i++)
-			tokens.push_back(temp[1].substr(i, 1));
 
 		try
 		{
-			result = new RemoveSpecialChars(tokens);
+			result = new RemoveSpecialChars();
 		}
 		catch (exception ex)
 		{
