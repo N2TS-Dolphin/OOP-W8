@@ -16,12 +16,6 @@ public:
 public:
 	string rename(string data)
 	{
-		cout << _SpecialChars.size() << endl;
-		for (int j = 0; j < _SpecialChars.size(); j++)
-		{
-			cout << _SpecialChars[j] << " ";
-		}
-		cout << endl;
 		stringstream builder;
 
 		for (int i = 0; i < data.length(); i++)
