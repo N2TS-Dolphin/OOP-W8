@@ -1,7 +1,7 @@
 #pragma once
 #include "IParsable.h"
 
-class AddCurrentMonth : public Object
+class AddCurrentMonth : public IRule
 {
 private:
 	string _CurrentMonth;
@@ -13,5 +13,15 @@ public:
 	}
 
 public:
+	string rename(string data)
+	{
+		stringstream builder;
+
+		builder << _CurrentMonth << " " << data;
+
+		string result = builder.str();
+		return result;
+	}
+
 	string toString() { return "AddCurrentMonth"; }
 };

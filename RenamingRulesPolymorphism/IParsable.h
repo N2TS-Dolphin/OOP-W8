@@ -10,9 +10,13 @@
 
 #include <vector>
 #include <string>
+#include <sstream>
 
 class IParsable : public Object
 {
+private:
+	string key;
+
 public:
 	virtual Object* parse(string) = 0;
 	virtual string parsedObjectName() = 0;
@@ -24,7 +28,7 @@ public:
 class RemoveSpecialCharsParser : public IParsable
 {
 public:
-	RemoveSpecialCharsParser();
+	RemoveSpecialCharsParser() {}
 
 public:
 	Object* parse(string data)
@@ -57,14 +61,21 @@ public:
 class OneSpaceOnlyParser : public IParsable
 {
 public:
-	OneSpaceOnlyParser();
+	OneSpaceOnlyParser() {}
 
 public:
 	Object* parse(string data)
 	{
 		Object* result = NULL;
 
-
+		try
+		{
+			result = new OneSpaceOnly();
+		}
+		catch (exception ex)
+		{
+			result = NULL; // Eat exception
+		}
 
 		return result;
 	}
@@ -77,12 +88,21 @@ public:
 class AddCurrentMonthParser : public IParsable
 {
 public:
-	AddCurrentMonthParser();
+	AddCurrentMonthParser() {}
 
 public:
 	Object* parse(string data)
 	{
 		Object* result = NULL;
+
+		try
+		{
+			result = new AddCurrentMonth();
+		}
+		catch (exception ex)
+		{
+			result = NULL; // Eat exception
+		}
 
 		return result;
 	}
@@ -95,12 +115,21 @@ public:
 class AddPrefixParser : public IParsable
 {
 public:
-	AddPrefixParser();
+	AddPrefixParser() {}
 
 public:
 	Object* parse(string data)
 	{
 		Object* result = NULL;
+
+		try
+		{
+			result = new AddPrefix();
+		}
+		catch (exception ex)
+		{
+			result = NULL; // Eat exception
+		}
 
 		return result;
 	}
@@ -113,12 +142,21 @@ public:
 class ReplaceParser : public IParsable
 {
 public:
-	ReplaceParser();
+	ReplaceParser() {}
 
 public:
 	Object* parse(string data)
 	{
 		Object* result = NULL;
+
+		try
+		{
+			result = new Replace();
+		}
+		catch (exception ex)
+		{
+			result = NULL; // Eat exception
+		}
 
 		return result;
 	}

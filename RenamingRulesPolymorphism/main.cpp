@@ -12,9 +12,7 @@ using namespace std;
 class IRule : public Object
 {
 public:
-    string rename(string data);
-
-    string toString() { return "IRule"; }
+    virtual string rename(string) = 0;
 };
 
 int main() 
