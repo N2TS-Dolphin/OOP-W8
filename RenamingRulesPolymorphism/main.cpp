@@ -9,12 +9,6 @@ using namespace std;
 #include "IParsable.h"
 #include "ParserFactory.h"
 
-class IRule : public Object
-{
-public:
-    virtual string rename(string) = 0;
-};
-
 int main() 
 {
     ParserFactory factory;

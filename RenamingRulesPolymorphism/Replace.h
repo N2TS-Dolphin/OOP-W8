@@ -1,5 +1,7 @@
 #pragma once
 #include "IParsable.h"
+#include "IRule.h"
+
 #include <cstring>
 
 class Replace : public IRule

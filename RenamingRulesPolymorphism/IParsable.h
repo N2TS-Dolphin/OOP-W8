@@ -1,6 +1,7 @@
 #pragma once
 #include "Object.h"
 #include "Utils.h"
+#include "IRule.h"
 
 #include "RemoveSpecialChars.h"
 #include "OneSpaceOnly.h"

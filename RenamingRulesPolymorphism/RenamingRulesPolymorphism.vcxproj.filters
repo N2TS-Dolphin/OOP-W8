@@ -53,5 +53,8 @@
     <ClInclude Include="Replace.h">
       <Filter>Rule</Filter>
     </ClInclude>
+    <ClInclude Include="IRule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -23,23 +23,23 @@ IParsable* ParserFactory::create(string type)
 {
     IParsable* parser = NULL;
 
-    if ("RemoveSpecialCharsParser" == type)
+    if ("RemoveSpecialChars" == type)
     {
         parser = new RemoveSpecialCharsParser();
     }
-    else if ("OneSpaceOnlyParser" == type)
+    else if ("OneSpaceOnly" == type)
     {
         parser = new OneSpaceOnlyParser();
     }
-    else if ("AddCurrentMonthParser" == type)
+    else if ("AddCurrentMonth" == type)
     {
         parser = new AddCurrentMonthParser();
     }
-    else if ("AddCurrentMonthParser" == type)
+    else if ("AddPrefix" == type)
     {
         parser = new AddPrefixParser();
     }
-    else if ("AddCurrentMonthParser" == type)
+    else if ("Replace" == type)
     {
         parser = new ReplaceParser();
     }

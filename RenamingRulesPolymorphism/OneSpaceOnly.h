@@ -1,5 +1,8 @@
 #pragma once
 #include "IParsable.h"
+#include "IRule.h"
+
+#include <sstream>
 
 class OneSpaceOnly : public IRule
 {
