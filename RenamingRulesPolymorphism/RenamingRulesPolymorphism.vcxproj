@@ -132,10 +132,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\EmployeesPolymorphism\Utils.h" />
+    <ClInclude Include="AddCurrentMonth.h" />
+    <ClInclude Include="AddPrefix.h" />
     <ClInclude Include="IParsable.h" />
     <ClInclude Include="Object.h" />
+    <ClInclude Include="OneSpaceOnly.h" />
     <ClInclude Include="ParserFactory.h" />
     <ClInclude Include="RemoveSpecialChars.h" />
+    <ClInclude Include="Replace.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -3,6 +3,10 @@
 #include "Utils.h"
 
 #include "RemoveSpecialChars.h"
+#include "OneSpaceOnly.h"
+#include "AddCurrentMonth.h"
+#include "AddPrefix.h"
+#include "Replace.h"
 
 #include <vector>
 #include <string>
@@ -58,7 +62,11 @@ public:
 public:
 	Object* parse(string data)
 	{
+		Object* result = NULL;
 
+
+
+		return result;
 	}
 
 	string parsedObjectName() { return "OneSpaceOnly"; }
@@ -74,7 +82,9 @@ public:
 public:
 	Object* parse(string data)
 	{
+		Object* result = NULL;
 
+		return result;
 	}
 
 	string parsedObjectName() { return "AddCurrentMonth"; }
@@ -90,7 +100,9 @@ public:
 public:
 	Object* parse(string data)
 	{
+		Object* result = NULL;
 
+		return result;
 	}
 
 	string parsedObjectName() { return "AddPrefix"; }
@@ -106,7 +118,9 @@ public:
 public:
 	Object* parse(string data)
 	{
+		Object* result = NULL;
 
+		return result;
 	}
 
 	string parsedObjectName() { return "Replace"; }
